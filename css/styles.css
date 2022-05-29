@@ -261,6 +261,7 @@ a{
 @media screen and (min-width: 1024px){
     .btn{
         font-size: 1.5rem;
+        padding: 2rem 3rem;
     }
 }
 
@@ -413,6 +414,7 @@ a{
 /* media */
 .media {
     display: flex;
+    margin-bottom: 4rem;
 }
   
 .media__title {
@@ -536,6 +538,10 @@ a{
     padding: 4rem;
 }
 
+.callout--signup{
+    transform: translateY(5rem);
+}
+
 .callout--primary{
     background-color: var(--color-primary);
     color: #fff;
@@ -632,7 +638,7 @@ a{
   
   .block--skewed-right {
     padding-bottom: calc(var(--padding-vertical) + 4rem);
-    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 80%);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 95%);
   }
   
   .block--skewed-left {
@@ -688,6 +694,11 @@ a{
 
 .nav__logo{
     transform: translateY(5px);
+}
+
+.nav__logo img{
+    width: 100%;
+    max-width: 150px;
 }
 
 @media screen and (min-width: 768px){
@@ -763,6 +774,7 @@ a{
 /* Footer */
 .footer{
     background-color: #232323;
+    padding-top: 10rem;
 }
 
 .footer__section{
@@ -849,7 +861,7 @@ a{
 .block-domain__prices{
     color: var(--color-headings);
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 6rem);
     font-size: 2rem;
     font-weight: 600;
