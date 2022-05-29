@@ -361,7 +361,7 @@ a{
 .plan .list__item {
     margin-bottom: 2rem;
 }
-  
+
 .plan--popular .card__header {
     position: relative;
 }
@@ -375,6 +375,14 @@ a{
     right: 5%;
 }
 
+.plan{
+    transition: transform 0.3s;
+}
+
+.plan:hover{
+    transform: scale(1.05);
+}
+
   @media screen and (min-width: 1024px) {
     .plan__name {
       font-size: 1.4rem;
@@ -383,7 +391,16 @@ a{
     .plan__price {
       font-size: 5rem;
     }
-  
+    
+    .plan--popular{
+        transform: scale(1.1);
+        transition: transform 0.3s;
+    }
+
+    .plan--popular:hover{
+        transform: scale(1.15);
+    }
+
     .plan__billing-cycle {
       font-size: 1.6rem;
     }
@@ -820,7 +837,7 @@ a{
 }
 
 /* Block Domain */
-.block--domain .input-group{
+.block-domain .input-group{
     box-shadow: 0 0 30px 20px #e6ebee;
     border: 0;
     margin: 4rem auto;
@@ -828,7 +845,7 @@ a{
 
 }
 
-.block--domain__prices{
+.block-domain__prices{
     color: var(--color-headings);
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -842,7 +859,17 @@ a{
 }
 
 @media screen and (min-width: 768px){
-    .block--domain__prices{
+    .block-domain__prices{
         grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
     }
+}
+
+/* Plans Block */
+.block-plans .grid{
+    gap: 6rem 4rem;
+}
+
+.block-plans .card{
+    max-width: 500px;
+    margin: 0 auto;
 }
