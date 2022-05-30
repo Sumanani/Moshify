@@ -261,7 +261,6 @@ a{
 @media screen and (min-width: 1024px){
     .btn{
         font-size: 1.5rem;
-        padding: 2rem 3rem;
     }
 }
 
@@ -531,6 +530,12 @@ a{
 
 .testimonial__image > img{
     width: 100%;
+}
+
+@media screen and (min-width: 768px){
+    .testimonial{
+        padding: 3rem;
+    }
 }
 
 /* Callouts */
@@ -846,7 +851,11 @@ a{
     }
 
     .footer__heading{
-        font-size: 2rem;
+        font-size: 1.6rem;
+    }
+
+    .footer a{
+        font-size: 1.5rem;
     }
 }
 
