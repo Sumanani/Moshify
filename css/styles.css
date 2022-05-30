@@ -204,6 +204,7 @@ a{
     text-transform: uppercase;
     user-select: none;
     white-space: nowrap;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .btn .icon{
